@@ -43,8 +43,11 @@ const App = () => (
     <div className="wish-container">
       <ul className="wish-list">
         {wishes.map(({ text, done }, i) => (
-          <li>
-            <label htmlFor={`wish${i}`} className="wish-list__item">
+          <li key={text}>
+            <label
+              htmlFor={`wish${i}`}
+              className={`wish-list__item ${done ? 'wish-completed' : ''}`}
+            >
               <input id={`wish${i}`} type="checkbox" checked={done} />
               {text}
             </label>
