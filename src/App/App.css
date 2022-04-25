@@ -1,0 +1,111 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  margin: 4rem;
+  width: 45vw;
+  height: auto;
+  border: 2px solid #2b2b2b;
+  padding: 2rem;
+  /* Contenedor wishes */
+  /* 'Archive done' button */
+}
+
+.App .app-title {
+  font-size: 35px;
+  display: block;
+  margin: 0;
+}
+
+.App .new-wish-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  width: 100%;
+  margin-top: 0.5rem;
+  /* 'ADD WISH' button */
+}
+
+.App .new-wish-container .wish-title {
+  font-size: 25px;
+  padding: 0;
+  margin-bottom: 0.2rem;
+}
+
+.App .new-wish-container .wish-input {
+  width: 78%;
+  height: 25px;
+  border: 1px solid black;
+}
+
+.App .new-wish-container .wish-btn {
+  width: 20%;
+  height: 25px;
+  background-color: white;
+  border: 1px solid black;
+  text-transform: uppercase;
+}
+
+.App .wish-container {
+  width: 80%;
+  margin-left: 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.App .wish-container .wish-list {
+  list-style-type: none;
+  padding: 0;
+  /* Alejo el checkbox */
+}
+
+.App .wish-container .wish-list .wish-list__item {
+  font-size: 1.2rem;
+}
+
+.App .wish-container .wish-list .wish-list__item > * + * {
+  margin-left: 1rem;
+}
+
+.App .wish-container .wish-list .wish-completed {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.App .wish-container .wish-list input {
+  margin: 0 5px 0 0;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.App .wish-archive-btn {
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+  height: 25px;
+  background-color: white;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=App.css.map */
