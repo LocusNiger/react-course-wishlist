@@ -8,7 +8,7 @@
     "lint": "eslint --fix src/**/*.{js,jsx}",
     "format": "prettier --write \"*.{js,jsx,json,css}\""
   },
-  "prettier":{
+  "prettier": {
     "trailingComma": "all",
     "singleQuote": true
   },
@@ -25,6 +25,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.2",
+    "prop-types": "^15.8.1",
     "react": "^16.14.0",
     "react-dom": "^16.8.6"
   },
@@ -46,7 +47,7 @@
     "src/**/*.{js,jsx}": [
       "npm run lint"
     ],
-    "src/**/*.{js,jsx,json,css,scss}":[
+    "src/**/*.{js,jsx,json,css,scss}": [
       "prettier --write",
       "git add"
     ]
