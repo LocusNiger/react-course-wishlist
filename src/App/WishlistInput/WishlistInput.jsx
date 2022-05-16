@@ -31,7 +31,7 @@ function WishlistInput({ onNewWish }) {
     </fieldset>
   );
 }
-/* Declaro las proptypes de las props */
+/* Declaro las proptypes */
 WishlistInput.propTypes = {
   onNewWish: propTypes.func,
 };

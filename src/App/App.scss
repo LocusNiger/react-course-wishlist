@@ -64,7 +64,7 @@ html {
       .wish-list__item > * + * {
         margin-left: 1rem;
       }
-      .wish-completed {
+      .wish-list__item--done {
         color: grey;
         text-decoration: line-through;
       }

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import WishlistInput from './WishlistInput';
-import WishlistItem from './WishlistItem';
+import WishList from './WishlistItem';
 
 /* array con los deseos iniciales */
 const initialWishes = [
@@ -23,7 +23,7 @@ const App = () => {
       {/* El setter crea un nuevo array con todos los deseos + el nuevo */}
       <WishlistInput onNewWish={(wish) => setWishes([...wishes, wish])} />
       {/* A la lista le mando el getter (incluye los iniciales) */}
-      <WishlistItem wishes={wishes} />
+      <WishList wishes={wishes} onWishesChange={setWishes} />
       <button type="button" className="wish-archive-btn">
         Archive done
       </button>
